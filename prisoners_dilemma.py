@@ -15,7 +15,7 @@ from __future__ import print_function
 # prisoners_dilemma.py automates competition among different strategies
 # for the Iterative Prisoners Dilemma, the canonical game of game-theory.
 # Each strategy is pitted against each other strategy for 100 to 200 rounds.
-# The results of all previous rounds within a 100-200 round stretch are known
+# The results of all prEvious rounds within a 100-200 round stretch are known
 # to both players. 
 #
 # play_tournament([team0, team1, team2]) executes a tournament and writes to tournament.txt
