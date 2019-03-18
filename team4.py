@@ -63,6 +63,7 @@ if __name__ == '__main__':
               # the simulation (if working correctly) would have awarded 
               # 300 to me and -750 to them. This test will pass if and only if
               # move('bbb', 'ccc', 0, 0) returns 'b'.
+              #square
               my_score=0, 
               their_score=0,
               result='b')             
