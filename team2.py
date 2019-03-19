@@ -6,9 +6,9 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'idk' # Only 10 chars displayed.
-strategy_name = 'Winning'
-strategy_description = 'betray almost every time'
+team_name = 'Team 565' # Only 10 chars displayed.
+strategy_name = 'The name the team gives to this strategy'
+strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
@@ -28,6 +28,7 @@ def move(my_history, their_history, my_score, their_score):
     
     return 'c'
 
+    
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
     from this module. Prints error if return value != result.
@@ -46,7 +47,7 @@ def test_move(my_history, their_history, my_score, their_score, result):
 
 if __name__ == '__main__':
      
-     #Test 1: Betray on first move.
+    # Test 1: Betray on first move.
     if test_move(my_history='',
               their_history='', 
               my_score=0,
@@ -62,8 +63,6 @@ if __name__ == '__main__':
               # the simulation (if working correctly) would have awarded 
               # 300 to me and -750 to them. This test will pass if and only if
               # move('bbb', 'ccc', 0, 0) returns 'b'.
-              #square
               my_score=0, 
               their_score=0,
-              result='b') 
-            
+              result='b')             
