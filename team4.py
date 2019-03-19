@@ -8,7 +8,7 @@
 
 team_name = 'idk' # Only 10 chars displayed.
 strategy_name = 'Winning'
-strategy_description = 'How does this strategy decide?'
+strategy_description = 'betray almost every time'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
@@ -63,6 +63,7 @@ if __name__ == '__main__':
               # the simulation (if working correctly) would have awarded 
               # 300 to me and -750 to them. This test will pass if and only if
               # move('bbb', 'ccc', 0, 0) returns 'b'.
+              #square
               my_score=0, 
               their_score=0,
               result='b')             
