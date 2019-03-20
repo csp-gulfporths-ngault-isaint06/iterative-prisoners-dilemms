@@ -5,10 +5,10 @@
 #     strategy_description: a string
 #     move: A function that returns 'c' or 'b'
 ####
-
+import random
 team_name = 'Running Rabbit' # Only 10 chars displayed.
-strategy_name = 'Tit for Tat'
-strategy_description = 'If you are nice we are nice'
+strategy_name = 'Coin flip/We are nice'
+strategy_description = 'If you have betrayed in the last 10 turns we will betray and if not we use a coin flip to decide if we will be nice or not'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
@@ -24,7 +24,7 @@ def move(my_history, their_history, my_score, their_score):
     # The most recent round is my_history[-1] and their_history[-1].
     
     # Analyze my_history and their_history and/or my_score and their_score.
-    # Decide whether to return 'c' or 'b'.    
+    # Decide whether to return 'c' or 'b'.
     if 'b' in their_history[-10:]:
         return 'b'
     else:
@@ -32,10 +32,7 @@ def move(my_history, their_history, my_score, their_score):
             return 'b'
         else:
             return 'c'
-
-
-
-import random
+    return 'c'
 
     
 def test_move(my_history, their_history, my_score, their_score, result):
