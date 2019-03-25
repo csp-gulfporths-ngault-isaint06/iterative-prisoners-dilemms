@@ -6,7 +6,7 @@
 #     move: A function that returns 'c' or 'b'
 ####
 import random
-team_name = 'idk' # Only 10 chars displayed.
+team_name = 'idk'
 strategy_name = 'Winning'
 strategy_description = 'If they have betrayed, betray. If they havent betrayed, betray 1% of the time and collude the rest of the time'
 
